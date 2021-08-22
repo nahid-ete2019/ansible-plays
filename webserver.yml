@@ -1,6 +1,6 @@
 ---
  - name: Play to setup web server
-   hosts: Tower_Node
+   hosts: all
    tasks:
         - name: latest package installed
           apt:
