@@ -1,0 +1,12 @@
+---
+- name: dir create
+  hosts: web
+  tasks:
+        - file: 
+           path: /mnt/app
+           state: directory
+           owner: nahid
+           group: alex
+           mode: 0770
+          
+...
