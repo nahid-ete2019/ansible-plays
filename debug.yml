@@ -1,0 +1,8 @@
+---
+ - name: This will print customized message for web hosts
+   hosts: all
+   tasks:
+        - name: Ansible debug module
+          debug:
+           msg: " This machine is {{ ansible_hostname }} with IP {{ ansible_default_ipv4.address }}"
+...
