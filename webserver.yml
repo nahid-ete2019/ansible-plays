@@ -1,11 +1,10 @@
 ---
  - name: Play to setup web server
    hosts: all
-   user: nahid
    become: yes
    tasks:
         - name: latest package installed
-          apt:
+          yum:
             name: tree
             state: latest 
 ...
