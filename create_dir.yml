@@ -1,6 +1,7 @@
 ---
 - name: dir create
   hosts: all
+  become: yes
   tasks:
         - file: 
            path: /mnt/app
