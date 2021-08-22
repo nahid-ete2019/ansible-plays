@@ -1,4 +1,4 @@
- - hosts: web
+ - hosts: all
    vars:
       greet: Hello world!
    tasks:
