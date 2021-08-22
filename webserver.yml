@@ -1,6 +1,7 @@
 ---
  - name: Play to setup web server
    hosts: all
+   remote_user: sysadmin
    become: yes
    tasks:
         - name: latest package installed
