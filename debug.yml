@@ -1,6 +1,5 @@
 ---
  - name: This will print customized message for web hosts
-   hosts: all
    tasks:
         - name: Ansible debug module
           debug:
